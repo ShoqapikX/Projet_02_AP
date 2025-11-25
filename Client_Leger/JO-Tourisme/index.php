@@ -61,6 +61,12 @@ $c_User = new ControleurUser($serveur, $serveur2, $bdd, $user, $mdp, $mdp2);
             case 6:
                 require_once("pages/profil.php");
                 break;
+            case 7:
+                require_once("pages/recherche_professionnel.php");
+                break;
+            case 8:
+                require_once("pages/detail_professionnel.php");
+                break;
         }
         ?>
     </main>

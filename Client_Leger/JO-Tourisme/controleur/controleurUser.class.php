@@ -125,4 +125,26 @@ class ControleurUser
         $unClientPro = $this->mod->selectClientPro($email);
         return $unClientPro;
     }
+
+    public function searchClientProByLetters($lettres)
+    {
+        // Validation des données
+        $lettres = trim(htmlspecialchars($lettres));
+        if (strlen($lettres) == 2) {
+            return $this->mod->searchClientProByLetters($lettres);
+        } else {
+            return null;
+        }
+    }
+
+    public function getClientProById($iduser)
+    {
+        // Validation de l'ID
+        $iduser = intval($iduser);
+        if ($iduser > 0) {
+            return $this->mod->getClientProById($iduser);
+        } else {
+            return null;
+        }
+    }
 }

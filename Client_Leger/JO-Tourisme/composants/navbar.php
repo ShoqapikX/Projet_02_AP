@@ -12,6 +12,9 @@
             <a href="index.php?page=2">Autres services</a>
         </li>
         <li>
+            <a href="index.php?page=7">Rechercher Client</a>
+        </li>
+        <li>
             <?php
             if (isset($_SESSION['email'])) {
                 echo ' <a href="index.php?page=6">Mon profil</a>';

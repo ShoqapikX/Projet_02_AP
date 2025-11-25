@@ -241,3 +241,180 @@ footer {
     object-fit: cover;
 }
 /*  fin affiche hotel */
+
+/* Styles pour la recherche de professionnels */
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Paris2024', sans-serif;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: #093a79;
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(-90deg, rgba(18, 103, 120, 0.9) 0%, rgba(9, 58, 121, 0.92) 80%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: var(--cursor-logo-pointer);
+    font-family: 'Paris2024', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nombre-resultats {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.table-affiche {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-affiche thead {
+    background: linear-gradient(-90deg, rgba(18, 103, 120, 0.9) 0%, rgba(9, 58, 121, 0.92) 80%);
+    color: white;
+}
+
+.table-affiche th, .table-affiche td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-affiche tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-voir-detail {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #093a79;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: var(--cursor-logo-pointer);
+    transition: all 0.3s ease;
+}
+
+.btn-voir-detail:hover {
+    background-color: #126778;
+    transform: translateY(-2px);
+}
+
+.retour-recherche, .navigation-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-retour {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Paris2024', sans-serif;
+    cursor: var(--cursor-logo-pointer);
+    transition: all 0.3s ease;
+}
+
+.btn-retour:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+.profil-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-detail-profil {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.table-detail-profil th {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: left;
+    width: 30%;
+    font-family: 'Paris2024', sans-serif;
+    color: #093a79;
+}
+
+.table-detail-profil td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-info, .message-error {
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.message-info {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #90caf9;
+}
+
+.message-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+/* Fin styles recherche professionnels */

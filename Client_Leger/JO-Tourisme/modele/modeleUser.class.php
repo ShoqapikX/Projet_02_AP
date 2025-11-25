@@ -185,4 +185,28 @@ class ModeleUser
             return null;
         }
     }
+
+    public function searchClientProByLetters($lettres)
+    {
+        $requete = "SELECT * FROM vueClientPro WHERE nom LIKE :lettres ORDER BY nom ASC";
+        if ($this->pdo != null) {
+            $select = $this->pdo->prepare($requete);
+            $select->execute(array(':lettres' => $lettres . '%'));
+            return $select->fetchAll();
+        } else {
+            return null;
+        }
+    }
+
+    public function getClientProById($iduser)
+    {
+        $requete = "SELECT * FROM vueClientPro WHERE iduser = :iduser";
+        if ($this->pdo != null) {
+            $select = $this->pdo->prepare($requete);
+            $select->execute(array(':iduser' => $iduser));
+            return $select->fetch();
+        } else {
+            return null;
+        }
+    }
 }
